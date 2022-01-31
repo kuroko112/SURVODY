@@ -1,0 +1,20 @@
+
+Get all Solve the problem and get all answer To the problem
+
+And edit The image table 
+
+SELECT * FROM problems
+
+JOIN messages_problems ON messages_problems.id_pro_message = problems.id_pro
+
+JOIN users ON users.user_id = messages_problems.id_user_ansr 
+
+JOIN image_users ON image_users.id_user_img = users.user_id 
+
+WHERE problems.id_pro = $id_pro => GET 
+
+--------------------------------------------
+
+                [ Loop To Get all Problems ] 
+
+<a herf="problems.php?id_pro=$row['id_pro']"></a>

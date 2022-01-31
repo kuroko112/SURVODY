@@ -1,0 +1,7 @@
+Get all Reequest all Friend_ship 
+
+SELECT * FROM friends 
+
+JOIN users ON users.id = friends.user_id 
+
+WHERE friends.friend_id = $id_user => SESSION['usr_data']['user_id'];
